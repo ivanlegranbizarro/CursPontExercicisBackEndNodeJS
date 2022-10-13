@@ -22,14 +22,14 @@ Crea una arrow function que rebi un paràmetre i una funció callback i li passi
 */
 
 const arrowFunction = (param, callback) => {
-  if (param == 'Iván') {
-    callback(console.log('Hola, Iván'));
+  if (param == "Iván") {
+    callback(console.log("Hola, Iván"));
   } else {
-    callback(console.log('Eliminar intrús xD'));
+    callback(console.log("Eliminar intrús xD"));
   }
 };
 
-arrowFunction('Iván', (res) => res);
+arrowFunction("Iván", (res) => res);
 
 /*
 Donats els objectes employees i salaries, crea una arrow function getEmployee() que retorni una Promise efectuant la cerca en l'objecte pel seu id.
@@ -38,15 +38,15 @@ Donats els objectes employees i salaries, crea una arrow function getEmployee() 
 let employees = [
   {
     id: 1,
-    name: 'Linux Torvalds',
+    name: "Linux Torvalds",
   },
   {
     id: 2,
-    name: 'Bill Gates',
+    name: "Bill Gates",
   },
   {
     id: 3,
-    name: 'Jeff Bezos',
+    name: "Jeff Bezos",
   },
 ];
 
@@ -98,7 +98,7 @@ getSalary = (empleat) => {
 
 const empleat1 = {
   id: 1,
-  name: 'Linux Torvalds',
+  name: "Linux Torvalds",
 };
 
 getSalary(empleat1);
@@ -135,3 +135,5 @@ getEmployee(5)
   })
   .catch((err) => console.log(err));
 
+
+export { getEmployee, getSalary };
