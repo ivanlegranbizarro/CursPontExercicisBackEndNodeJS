@@ -113,3 +113,20 @@ const encriptarFitxer = () => {
 };
 
 encriptarFitxer();
+
+/*
+Passos que s' executen amb codificaFitxer():
+1. Llegeix el fitxer frase.txt
+2. El codifica en base64
+3. El codifica en hexadecimal
+4. Escriu el resultat en els fitxers frase.txt.base64 i frase.txt.hex
+
+Passos que s'executen amb encriptarFitxer():
+1. Llegeix el fitxer frase.txt
+2. Genera una clau de 24 bytes
+3. Genera un vector d'inicialització de 16 bytes
+4. Crea un objecte cipher amb l'algoritme aes-192-cbc
+5. Encripta el fitxer frase.txt
+6. Escriu el resultat en el fitxer frase.txt.aes
+7. Esborra els fitxers frase.txt, frase.txt.base64 i frase.txt.hex
+*/
