@@ -57,3 +57,23 @@ const missatge = () => {
 };
 
 missatge();
+
+/*
+Crea una funció que llisti per la consola el contingut del directori d'usuari/ària de l'ordinador utilizant Node Child Processes.
+*/
+
+const spawn = require("child_process").spawn;
+const os = require("os");
+const userHomeDir = os.homedir();
+
+const llistar = function () {
+  const llistar = spawn("ls", [userHomeDir]);
+  llistar.stdout.on("data", (data) => {
+    console.log(data.toString());
+  });
+  llistar.stderr.on("data", (data) => {
+    console.log(data.toString());
+  });
+};
+
+llistar();
