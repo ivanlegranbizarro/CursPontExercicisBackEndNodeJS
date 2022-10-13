@@ -135,24 +135,3 @@ getEmployee(5)
   })
   .catch((err) => console.log(err));
 
-
-/*
-COMENTARI: Oriol, jo pels enunciats he entès que no s'havia d'usar el async/await, sinó Promeses tradicionals. Però després als recursos que s'han adjuntat es parla de async/await, per tant no se si es podien emprar o no 😑. Si es pogués, hagués fet algo com això:
-
-async function getEmployeeAndSalary(id) {
-  try {
-    const employee = await getEmployee(id);
-    const salary = await getSalary(employee);
-    const result = {
-      employee,
-      salary,
-    };
-    console.log(result);
-  } catch (error) {
-    console.log(error);
-  }
-}
-
-getEmployeeAndSalary(3);
-
-*/
