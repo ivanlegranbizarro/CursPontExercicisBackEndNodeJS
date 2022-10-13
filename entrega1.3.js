@@ -84,7 +84,7 @@ getEmployee(1)
   Crea una altra arrow function getSalary() similar a l'anterior que rebi com a paràmetre un objecte employee i retorni el seu salari.
   */
 
-getSalary = (empleat) => {
+const getSalary = (empleat) => {
   return new Promise((resolve, reject) => {
     let { id } = empleat;
     let salary = salaries.find((s) => s.id === id);
@@ -134,6 +134,3 @@ getEmployee(5)
     });
   })
   .catch((err) => console.log(err));
-
-
-export { getEmployee, getSalary };
