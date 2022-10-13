@@ -2,9 +2,11 @@
 Mostra per la consola el resultat d'una arrow function autoinvocable que sumi dos nombres.
 */
 
-(() => {
-  console.log(5 + 5);
-})();
+console.log(
+  (() => {
+    return 5 + 5;
+  })()
+);
 
 /*
 Crea una arrow function que, rebent un paràmetre, retorni un objecte amb un atribut que tingui com a valor el paràmetre rebut.
@@ -40,7 +42,7 @@ Escriu una function creadora d'objectes que faci instàncies d'una classe abstra
 class Animal {
   constructor() {
     if (this.constructor === Animal) {
-      new TypeError("La classe 'Animal' no pot ser instanciada");
+      throw new Error("No se puede instanciar una clase abstracta");
     }
   }
 }
