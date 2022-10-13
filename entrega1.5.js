@@ -59,7 +59,7 @@ const missatge = () => {
 missatge();
 
 /*
-Crea una funció que llisti per la consola el contingut del directori d'usuari/ària de l'ordinador utilizant Node Child Processes.
+Crea una funció que llisti per la consola el contingut del directori d'usuari/ària de l'ordinador utilitzant Node Child Processes.
 */
 
 const spawn = require("child_process").spawn;

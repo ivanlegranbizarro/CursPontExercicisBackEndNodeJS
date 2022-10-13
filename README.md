@@ -1,5 +1,5 @@
 # CursPontExercicisBackEndNodeJS
 
-Entregas Sprint 1
+Entregues Sprint 1
 
 Iván Legrán Bizarro
