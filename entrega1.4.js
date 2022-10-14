@@ -5,15 +5,15 @@ Crea una funció asíncrona que rebi un id d'empleat/da i imprimeixi per pantall
 let employees = [
   {
     id: 1,
-    name: "Linux Torvalds",
+    name: 'Linux Torvalds',
   },
   {
     id: 2,
-    name: "Bill Gates",
+    name: 'Bill Gates',
   },
   {
     id: 3,
-    name: "Jeff Bezos",
+    name: 'Jeff Bezos',
   },
 ];
 
@@ -58,9 +58,10 @@ const getSalary = (empleat) => {
 const getEmployeeAndSalary = async (id) => {
   try {
     const employee = await getEmployee(id);
-    console.log(employee);
     const salary = await getSalary(employee);
-    console.log(salary);
+    console.log(
+      `El nom de l'empleat és ${employee.name} i el seu salari és ${salary.salary}`
+    );
   } catch (error) {
     console.log(error);
   }
@@ -102,12 +103,12 @@ Crea una funció que retorni el doble del número que li passa com a paràmetre 
 
 function doble(num) {
   return new Promise((resolve, reject) => {
-    if (typeof num === "number") {
+    if (typeof num === 'number') {
       setTimeout(() => {
         resolve(num * 2);
       }, 2000);
     } else {
-      reject("El paràmetre no és un número");
+      reject('El paràmetre no és un número');
     }
   });
 }
@@ -129,7 +130,7 @@ async function sumaDobles(num1, num2, num3) {
   }
 }
 
-sumaDobles(1, 2, 3).then((res) => console.log(res));
+console.log(sumaDobles(1, 2, 3));
 
 /*
 Força i captura tants errors com puguis dels nivells 1 i 2.
