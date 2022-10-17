@@ -46,46 +46,46 @@ Write an object creator function that instantiates an abstract class. Invoke it 
 class Animal {
   constructor() {
     if (this.constructor === Animal) {
-      throw new Error('No se puede instanciar una clase abstracta');
+      throw new Error('No es pot instanciar una classe abstracta');
     }
   }
 }
 
-class Perro extends Animal {
+class Gos extends Animal {
   constructor() {
     super();
-    this.nombre = 'Perro';
+    this.nombre = 'Gos';
   }
 }
 
-class Gato extends Animal {
+class Gat extends Animal {
   constructor() {
     super();
-    this.nombre = 'Gato';
+    this.nombre = 'Gat';
   }
 }
 
-class Caballo extends Animal {
+class Cavall extends Animal {
   constructor() {
     super();
-    this.nombre = 'Caballo';
+    this.nombre = 'Cavall';
   }
 }
 
 function crearAnimal(nombre) {
   switch (nombre) {
-    case 'Perro':
-      return new Perro();
-    case 'Gato':
-      return new Gato();
-    case 'Caballo':
-      return new Caballo();
+    case 'Gos':
+      return new Gos();
+    case 'Gat':
+      return new Gat();
+    case 'Cavall':
+      return new Cavall();
     default:
-      throw new Error('No existe ese animal');
+      throw new Error('Aquest animal no existeix');
   }
 }
 
-let perro = crearAnimal('Perro');
+let gos = crearAnimal('Gos');
 
-console.log(perro.nombre);
-console.log(typeof perro);
+console.log(gos.nombre);
+console.log(typeof gos);
