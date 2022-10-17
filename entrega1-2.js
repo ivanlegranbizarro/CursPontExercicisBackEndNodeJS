@@ -39,10 +39,6 @@ persona.dirNom();
 Escriu una function creadora d'objectes que faci instàncies d'una classe abstracta. Invoca-la amb diferents definicions.
 */
 
-/*
-Write an object creator function that instantiates an abstract class. Invoke it with different definitions.
-*/
-
 class Animal {
   constructor() {
     if (this.constructor === Animal) {
